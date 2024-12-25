@@ -1,0 +1,6 @@
+export * from "./Forbes"
+export * from "./BusinessInsider"
+export * from "./Cnet"
+export * from "./FrantfurterAllgemeine"
+export * from "./TheVerge"
+export * from "./WirtschaftsWoche"

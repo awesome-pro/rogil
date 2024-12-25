@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --blue: #2962f6;
+    --cyan: #3ebffc;
+    --purple-cyan: #495bf1;
+    --green: #1dac76;
+    --violet: #7029f6;
+    --pink: #ca80f4;
+    --yellow: #f0be48;
+
+    --shade-blue: #94b1e8;
+    --shade-cyan: #b4dff1;
+    --shade-green: #d7e0c9;
+    --shade-yellow: #f3dda9;
+
+    --system-100: #11244a;
+    --system-80: #3d4c6a;
+    --system-70: #4d586e;
+    --system-60: #b9c1d1;
+    --system-50: #d5d9e3;
+    --system-40: #e2e7f2;
+    --system-30: #eff2f8;
+    --system-20: #f5f7fc;
+
+    --invert-white: #FFFFF;
+    --invert-80: rgba(255, 255, 255, 0.8);
+    --invert-60: rgba(255, 255, 255, 0.6);
+    --invert-20: rgba(255, 255, 255, 0.2);
+
+    --hover-system-100: #131d6c;
+    --hover-system-40: #11244a;
+    --hover-blue: #1046d1;
+
+    --font-instrument-sans: 'Instrument Sans', sans-serif;
+  }
+
+  .font-instrument-sans-700 {
+    font-family: var(--font-instrument-sans);
+    font-weight: 700;
+  }
+  .font-instrument-sans-600 {
+    font-family: var(--font-instrument-sans);
+    font-weight: 600;
+  }
+  .font-instrument-sans-500 {
+    font-family: var(--font-instrument-sans);
+    font-weight: 500;
+  }
+}
+
+.ismet-koyun {
+  background: url(../../assets/ismet-koyun.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cta {
+  background: url(../../assets/Cta/cta.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.extension {
+  transform: skewY(30deg);
+  transform-origin: top right;
+}
+
+@media screen and (max-width: 767px) {
+  .ismet-koyun {
+    background: url(../../assets/ismet-koyun-mobile.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .cta {
+    background: none;
+    background-color: var(--purple-cyan);
+  }
+}
